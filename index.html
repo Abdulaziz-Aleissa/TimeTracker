@@ -31,7 +31,7 @@
           <div class="col-md-6">
             <div class="card">
               <div class="card-body">
-                <h1 class="card-title text-center">Weekly Tracker</h1>
+                <h1 class="card-title text-center">Time Tracker</h1>
                 <form id="timeForm">
                   <div class="form-group">
                     <input
@@ -39,31 +39,51 @@
                       class="form-control time-input"
                       id="time1"
                       placeholder="hours:minutes"
+                      inputmode="numeric"
                     />
                     <input
                       type="text"
                       class="form-control time-input mt-2"
                       id="time2"
                       placeholder="hours:minutes"
+                      inputmode="numeric"
                     />
                     <input
                       type="text"
                       class="form-control time-input mt-2"
                       id="time3"
                       placeholder="hours:minutes"
+                      inputmode="numeric"
                     />
                     <input
                       type="text"
                       class="form-control time-input mt-2"
                       id="time4"
                       placeholder="hours:minutes"
+                      inputmode="numeric"
                     />
-                    <input
-                      type="text"
-                      class="form-control time-input mt-2"
-                      id="time5"
-                      placeholder="hours:minutes"
-                    />
+                  </div>
+                  <div class="form-group">
+                    <div class="row">
+                      <div class="col-6">
+                        <input
+                          type="text"
+                          class="form-control time-input"
+                          id="time5"
+                          placeholder="hours:minutes"
+                          inputmode="numeric"
+                        />
+                      </div>
+                      <div class="col-6">
+                        <input
+                          type="text"
+                          class="form-control time-input"
+                          id="thursdayEntry"
+                          placeholder="Thursday entry time"
+                          inputmode="numeric"
+                        />
+                      </div>
+                    </div>
                   </div>
                   <button
                     type="button"
@@ -74,6 +94,7 @@
                   </button>
                 </form>
                 <div id="result" class="mt-3 text-center"></div>
+                <div id="thursdayResult" class="mt-3 text-center"></div>
               </div>
             </div>
           </div>
