@@ -1,0 +1,189 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+}
+
+.bubble-background {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.bubble {
+  position: absolute;
+  bottom: -100px;
+  border-radius: 50%;
+  animation: rise 10s infinite;
+  opacity: 0.8;
+}
+
+@keyframes rise {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-800px);
+    opacity: 0;
+  }
+}
+
+/* Add multiple bubbles with different pastel colors */
+.bubble:nth-child(1) {
+  left: 10%;
+  animation-delay: 0s;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 182, 193, 0.6); /* Light Pink */
+}
+
+.bubble:nth-child(2) {
+  left: 20%;
+  animation-delay: 2s;
+  width: 60px;
+  height: 60px;
+  background: rgba(173, 216, 230, 0.6); /* Light Blue */
+}
+
+.bubble:nth-child(3) {
+  left: 30%;
+  animation-delay: 4s;
+  width: 80px;
+  height: 80px;
+  background: rgba(144, 238, 144, 0.6); /* Light Green */
+}
+
+.bubble:nth-child(4) {
+  left: 40%;
+  animation-delay: 1s;
+  width: 100px;
+  height: 100px;
+  background: rgba(255, 240, 245, 0.6); /* Lavender Blush */
+}
+
+.bubble:nth-child(5) {
+  left: 50%;
+  animation-delay: 3s;
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 228, 181, 0.6); /* Light Goldenrod Yellow */
+}
+
+.bubble:nth-child(6) {
+  left: 60%;
+  animation-delay: 5s;
+  width: 70px;
+  height: 70px;
+  background: rgba(255, 182, 193, 0.6); /* Light Pink */
+}
+
+.bubble:nth-child(7) {
+  left: 70%;
+  animation-delay: 2s;
+  width: 90px;
+  height: 90px;
+  background: rgba(173, 216, 230, 0.6); /* Light Blue */
+}
+
+.bubble:nth-child(8) {
+  left: 80%;
+  animation-delay: 4s;
+  width: 40px;
+  height: 40px;
+  background: rgba(144, 238, 144, 0.6); /* Light Green */
+}
+
+.bubble:nth-child(9) {
+  left: 90%;
+  animation-delay: 1s;
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 240, 245, 0.6); /* Lavender Blush */
+}
+
+.bubble:nth-child(10) {
+  left: 95%;
+  animation-delay: 3s;
+  width: 100px;
+  height: 100px;
+  background: rgba(255, 228, 181, 0.6); /* Light Goldenrod Yellow */
+}
+
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+
+button {
+  background-color: #ff6f61;
+  border: none;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+button:hover {
+  background-color: #ff4a3d;
+}
+
+.time-input {
+  position: relative;
+  font-size: 0.6rem;
+}
+
+.time-input::placeholder {
+  font-size: 0.5rem;
+  color: #888;
+  transition: all 0.3s;
+  position: absolute;
+  top: 0.5rem;
+  left: 0.75rem;
+}
+
+.time-input:focus::placeholder {
+  font-size: 0.5rem;
+  transform: translateY(-1.5rem);
+  opacity: 0;
+}
+
+.form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: rgb(255, 211, 250);
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgb(255 211 250 / 26%);
+}
+
+.btn {
+  border: none;
+  background-color: rgb(255, 211, 250, 0.5);
+}
+
+.btn:focus {
+  border: none;
+  background-color: rgb(255, 211, 250);
+  box-shadow: 0 0 0 0.2rem rgb(255 211 250 / 26%);
+}
+
+.btn:hover {
+  background-color: rgb(255, 211, 250);
+}
+
+.card-title {
+  size: 90%;
+  color: #c3cfe2;
+}
+
+#result {
+  color: #c3cfe2;
+}
